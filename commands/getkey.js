@@ -13,7 +13,7 @@ module.exports = {
             .setColor(0xff0000));
         if (!message.member.roles.has(message.guild.roles.find(role => role.name === "Gen Access").id)) return message.channel.send(new discord.RichEmbed()
             .setTitle(`Stop!`)
-            .setDescription(`**You need to have the "Premium Gen Access" role.**`)
+            .setDescription(`**You need to have the "Gen Access" role.**`)
             .setColor(0xff0000));
         if (items.length <= 0) return message.channel.send(new discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
