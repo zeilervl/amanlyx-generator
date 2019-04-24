@@ -71,7 +71,7 @@ bot.on("error", function(message) {
 
 bot.once("ready", function() {
     log(chalk.bgBlack(chalk.green(`Ready. ${bot.users.size} members.`)));
-    bot.user.setActivity(".help || 8592 Members", {type: 1, url: "https://www.twitch.tv/play_aman"}) //streaming text (url to twitch url)
+    bot.user.setActivity(".help || Team Token", {type: 1, url: "https://www.twitch.tv/play_aman"}) //streaming text (url to twitch url)
 });
 
 try {
