@@ -16,12 +16,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MendtheMiner/DiscordAccountBot.git"
+    "url": "git+https://github.com/zeilervl"
   },
   "author": "MendtheMiner",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MendtheMiner/DiscordAccountBot/issues"
+    "url": "https://github.com/zeilervl"
   },
-  "homepage": "https://github.com/MendtheMiner/DiscordAccountBot#readme"
+  "homepage": "https://github.com/zeilervl"
 }
