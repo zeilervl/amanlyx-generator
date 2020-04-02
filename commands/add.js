@@ -3,7 +3,7 @@ const fs = require("fs");
 
 module.exports = {
     async run(bot, message, args) {
-        if (message.author.id !== "614576947326091274" && message.author.id !== "614576947326091274" && message.author.id !== "614576947326091274") return message.channel.send("**Unauthorised.**");
+        if (message.author.id !== "679613118866784256" && message.author.id !== "614576947326091274" && message.author.id !== "694499734534226011") return message.channel.send("**Unauthorised.**");
         if (!args[0] || !args[1]) return message.channel.send("**You need to provide the type and quality [1-5] of account you're adding.**");
         if (parseInt(args[1]) > 5 || parseInt(args[1]) < 1) return message.channel.send(`**The quality you entered [\`${args[1]}\`] is invalid. It must be between 1 and 5.**`);
         const items = JSON.parse(fs.readFileSync("./items.json", "utf8"));
