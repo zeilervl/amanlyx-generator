@@ -4,7 +4,7 @@ const snekfetch = require("snekfetch");
 
 module.exports = {
     async run(bot, message, args) {
-        if (message.author.id !== "614576947326091274" && message.author.id !== "614576947326091274") return message.channel.send("**Unauthorised.**");
+        if (message.author.id !== "679613118866784256" && message.author.id !== "694499734534226011") return message.channel.send("**Unauthorised.**");
         const accountsList = JSON.parse(fs.readFileSync("./items.json", "utf8"));
         if (accountsList.length === 0) {
             const outEmbed = new discord.RichEmbed()
