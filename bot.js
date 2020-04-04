@@ -75,7 +75,7 @@ bot.once("ready", function() {
     bot.user.setActivity(".help || For Commands", {type: 1, url: "https://www.twitch.tv/play_aman"}) //streaming text (url to twitch url)
 });
 
-bot.on("guildMemberAdd", function(member), {
+bot.on("guildMemberAdd", function(member) {
 	let channel = member.guild.channels.find(c => c.name === JSON.parse(config).channel);
 	let mEmbed = new discord.RichEmbed()
 	    .setTitle("Welcome")
