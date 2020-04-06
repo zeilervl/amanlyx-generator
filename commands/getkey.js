@@ -9,7 +9,7 @@ module.exports = {
 
         if (message.channel.name !== "🎁。generator") return message.channel.send(new discord.RichEmbed()
             .setTitle(`Stop!`)
-            .setDescription(`**You need to use the correct channel (<#${message.guild.channels.find(channel => channel.name === "gen").id}>).**`)
+            .setDescription(`**You need to use the correct channel (<#${message.guild.channels.find(channel => channel.name === "🎁。generator").id}>).**`)
             .setColor(0xff0000));
         if (!message.member.roles.has(message.guild.roles.find(role => role.name === "Gen Access").id)) return message.channel.send(new discord.RichEmbed()
             .setTitle(`Stop!`)
