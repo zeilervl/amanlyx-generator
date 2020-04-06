@@ -8,7 +8,7 @@ module.exports = {
 
         if (!message.channel.name.includes("🎁。generator")) return message.channel.send(new discord.RichEmbed()
             .setTitle(`Stop!`)
-            .setDescription(`**You need to use the correct channel (<#${message.guild.channels.find(channel => channel.name.includes("gen")).id}>).**`)
+            .setDescription(`**You need to use the correct channel (<#${message.guild.channels.find(channel => channel.name.includes("🎁。generator")).id}>).**`)
             .setColor(0xff0000));
         let account;
         const outEmbed = new discord.RichEmbed()
