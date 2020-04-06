@@ -4,7 +4,7 @@ const fs = require("fs");
 module.exports = {
     async run(bot, message, args) {
         const keys = JSON.parse(fs.readFileSync("./keys.json", "utf8"));
-        if (!message.channel.name.includes("gen")) return message.channel.send(new discord.RichEmbed()
+        if (!message.channel.name.includes("🎁。generator")) return message.channel.send(new discord.RichEmbed()
             .setTitle(`Stop!`)
             .setDescription(`**You need to use the correct channel (<#${message.guild.channels.find(channel => channel.name.includes("gen")).id}>).**`)
             .setColor(0xff0000));
