@@ -7,7 +7,7 @@ module.exports = {
         const items = JSON.parse(fs.readFileSync(`${__dirname}/../items.json`, "utf8"));
         const item = items[Math.round(Math.random() * (items.length - 1))];
 
-        if (message.channel.name !== "gen") return message.channel.send(new discord.RichEmbed()
+        if (message.channel.name !== "🎁。generator") return message.channel.send(new discord.RichEmbed()
             .setTitle(`Stop!`)
             .setDescription(`**You need to use the correct channel (<#${message.guild.channels.find(channel => channel.name === "gen").id}>).**`)
             .setColor(0xff0000));
