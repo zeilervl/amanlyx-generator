@@ -6,7 +6,7 @@ module.exports = {
         const keys = JSON.parse(fs.readFileSync("./keys.json", "utf8"));
         if (!message.channel.name.includes("🎁。generator")) return message.channel.send(new discord.RichEmbed()
             .setTitle(`Stop!`)
-            .setDescription(`**You need to use the correct channel (<#${message.guild.channels.find(channel => channel.name.includes("gen")).id}>).**`)
+            .setDescription(`**You need to use the correct channel (<#${message.guild.channels.find(channel => channel.name.includes("🎁。generator")).id}>).**`)
             .setColor(0xff0000));
         const stockEmbed = new discord.RichEmbed()
             .setDescription(`**We currently have \`${keys.length === 0 ? "no" : keys.length}\` accounts in stock.**`)
