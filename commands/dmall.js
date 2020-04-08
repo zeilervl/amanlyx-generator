@@ -7,7 +7,7 @@
             for(let i = 0, len = members.length; i < len; i++) {
                 let mEmbed = new discord.RichEmbed()
                 .setDescription(message.content.slice(message.content.indexOf(args[0]), message.content.length))
-                .setColor(0x36393E)
+                .setColor(0xDA004E)
                 
                 members[i].send(mEmbed);
             }
