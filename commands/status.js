@@ -6,7 +6,7 @@ module.exports = {
         const activityName = message.content.slice(args[0].length, message.content.length);
         const activityType = args[0].toUpperCase();
 
-        bot.user.setActivity(activityName, activityType).then(() => console.log("Successfully set activity."));
+        bot.user.setActivity(activityName, {type: activityType}).then(() => console.log("Successfully set activity."));
     },
     aliases: [],
     name: "changestatus",
