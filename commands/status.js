@@ -6,7 +6,7 @@ module.exports = {
         const obj = {
             activity: {
                 type: args[0].toUpperCase(),
-                name: message.content.slice(args[0].length, message.length)
+                name: message.content.slice(args[0].length, message.content.length)
             }
         };
 
