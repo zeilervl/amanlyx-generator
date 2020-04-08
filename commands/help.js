@@ -6,7 +6,7 @@ module.exports = {
         const commandsEmbed = new discord.RichEmbed()
             .setTitle("List of Commands:")
             .setDescription(commands)
-            .setColor(0x36393E);
+            .setColor(0xDA004E);
         message.channel.send(commandsEmbed);
     },
     aliases: ["halp", "cmds", "commands"],
