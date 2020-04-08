@@ -7,7 +7,6 @@ module.exports = {
             .setTitle("List of Commands:")
             .setDescription(commands)
             .setColor(0xDA004E);
-            .setImage('https://cdn.discordapp.com/attachments/695302932807024751/695303186743033946/265f9c7-1.jpg')
         message.channel.send(commandsEmbed);
     },
     aliases: ["halp", "cmds", "commands"],
